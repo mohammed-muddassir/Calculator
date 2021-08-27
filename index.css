@@ -1,0 +1,122 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab,yellow);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#container{
+    margin:0 auto;
+    position: absolute;
+    top:30%;
+    left:30%;
+    width:480px;
+   
+  }
+  
+  #numb-container{
+  
+    width:480px;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    /* background:#333; */
+    
+    
+  }
+
+  #inner-container{
+      display:flex;   
+  }
+  button{
+      width:100%;
+      background:rgba(190, 190, 190, 0.555);
+      padding: 1rem;
+      border:1px solid grey;
+      color:#333;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 1rem;
+      cursor: pointer;
+
+  }
+  button:active{
+   
+        background-color: rgba(255, 255, 255, 0.726);
+        color: #333;
+        transition: .5sec ease-in;
+
+  }
+  #input-container{
+   width:480px;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items:flex-end;
+    margin:0 auto; 
+    border:2px solid;
+    background:rgba(190, 190, 190, 0.555);
+    color:rgba(0, 0, 0, 0.699);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius:5px;
+    border: none;
+    
+  }
+  .previou{
+    font-size:1.25rem;
+    margin-right:.5rem
+  }
+  .current{
+    margin-right:.5rem;
+  }
+  
+  .btn{
+    padding:.8rem;
+    border-radius:0px 
+  }
+  #operand{
+    display:flex;
+    flex-direction:column
+  }
+  .btn-danger{
+    width:3rem
+  }
+
+  @media only screen and (max-width:700px){
+      body{
+          height:100vh;
+          background-size: 300% 300%;
+          
+      }
+      #container{
+          width:300px;
+          top:20%;
+          left:40px
+      }
+      button{
+          padding: .7rem;
+      }
+    #input-container{
+        width:300px;
+       
+
+    }
+    #numb-container{
+        width: 300px;
+    }
+
+  }
+  
